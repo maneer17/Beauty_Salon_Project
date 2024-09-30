@@ -66,7 +66,7 @@ public class Main {
                     customerManager.view(customerManager.customers);
                     System.out.println("Which one do you want to update? Please enter the index:");
                     int index = input.nextInt();
-                    input.nextLine();  // Consume leftover newline
+                    input.nextLine();  
                     System.out.println("Enter the new name:");
                     String new_name = input.nextLine();
                     System.out.println("Enter the new phone number:");
@@ -93,7 +93,7 @@ public class Main {
                     double duration = input.nextDouble();
                     System.out.println("Enter the service price:");
                     double price = input.nextDouble();
-                    input.nextLine();  // Consume leftover newline
+                    input.nextLine();  
                     serviceManager.addService(serviceName, duration, price);
                     break;
 
@@ -142,8 +142,7 @@ public class Main {
                     Date final_date = new SimpleDateFormat("yyyy-MM-dd-hh").parse(date+"-"+hour);
                     appointmentManager.addAppointment(customer,service,final_date);
                     break;
-                // Add appointment (complex part omitted for brevity)
-                // Your addAppointment logic goes here...
+                
 
 
                 case 8:
